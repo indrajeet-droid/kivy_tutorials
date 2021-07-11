@@ -1,0 +1,34 @@
+# Widgets are building blocks of the kivy GUI
+# the responsibility of widgets is to take event as an input and provide an appropriate response to it
+
+# Event happened on widgets and widgets respond accordingly
+# Event ----> widgets ----> Response
+
+# The event in widgets can be of two types
+#     -Property Event
+#     -Widget-Defined Event
+
+
+from kivy.app import App
+from kivy.uix.label import Label
+
+
+class DemoApp(App):
+
+    # build method execute first and load all widgets on window
+    def build(self):
+        pass
+
+
+demo = DemoApp()
+demo.run()
+
+
+# layout
+#     - layouts are containers
+#     - help to organize and arrange widgets to our need
+#     - types
+#         -Anchor Layout
+#         -Float Layout
+#         -Grid Layout
+#         -Page Layout
